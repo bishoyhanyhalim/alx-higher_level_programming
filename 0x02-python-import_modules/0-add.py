@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+
 if __name__ == "__main__":
-	"""this func printing total of number
-	"""
+	"""this func printing total of number"""
 
 	from add_0 import add
 

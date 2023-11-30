@@ -2,8 +2,7 @@
 
 if __name__ == "__main__":
 
-	"""this func use to printing opretors
-	"""
+	"""this func use to printing opretors"""
 
 	from calculator_1 import add, sub, mul, div
 
@@ -11,9 +10,6 @@ if __name__ == "__main__":
 	b = 5
 
 	print("{} + {} = {}".format(a, b, add(a, b)))
-
 	print("{} - {} = {}".format(a, b, sub(a, b)))
-
 	print("{} * {} = {}".format(a, b, mul(a, b)))
-
 	print("{} / {} = {}".format(a, b, div(a, b)))

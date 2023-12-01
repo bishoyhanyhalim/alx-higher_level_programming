@@ -3,6 +3,6 @@
 if __name__ == "__main__":
     """it gave the value of numbers
     """
-    from variable_load_5 import numbers
+    from variable_load_5 import a
 
-    print(numbers)
+    print(a)

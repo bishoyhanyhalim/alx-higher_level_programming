@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-
 def print_sorted_dictionary(a_dictionary):
 
     """
     for print the key
     """
 
-    cools = list(a_dictionary.cools())
+    keys = list(a_dictionary.keys())
 
-    cools.sort()
+    keys.sort()
 
-    for key in cools:
+    for key in keys:
         print("{}: {}".format(key, a_dictionary[key]))

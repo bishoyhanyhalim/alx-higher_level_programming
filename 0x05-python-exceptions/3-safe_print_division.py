@@ -9,8 +9,6 @@ def safe_print_division(a, b):
         book = None
 
     finally:
-        print("Inside book: ", end="")
-
-        print("{}".format(book))
+        print("Inside result: {}".format(book))
 
     return (book)

@@ -88,4 +88,3 @@ class Rectangle:
         """print the finally value good"""
 
         print("Bye rectangle...")
-

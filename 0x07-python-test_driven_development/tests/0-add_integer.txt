@@ -1,0 +1,1 @@
+This module defines for nteger addition number function ``add_integer(a, b=98)``

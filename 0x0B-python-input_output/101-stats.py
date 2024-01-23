@@ -5,12 +5,10 @@
 def print_stats(size, status_codes):
     """Print now this is an arg so cool
 
-
     Args:
         now this is an arg so cool
     """
     print("File size: {}".format(size))
-
     for key in sorted(status_codes):
         print("{}: {}".format(key, status_codes[key]))
 
@@ -35,7 +33,6 @@ if __name__ == "__main__":
 
             try:
                 size += int(line[-1])
-
             except (IndexError, ValueError):
                 pass
 
@@ -45,13 +42,11 @@ if __name__ == "__main__":
                         status_codes[line[-2]] = 1
                     else:
                         status_codes[line[-2]] += 1
-
             except IndexError:
                 pass
 
         print_stats(size, status_codes)
 
     except KeyboardInterrupt:
-
         print_stats(size, status_codes)
         raise

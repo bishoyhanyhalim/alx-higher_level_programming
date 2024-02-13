@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """this is a rectangle class for project"""
 
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):

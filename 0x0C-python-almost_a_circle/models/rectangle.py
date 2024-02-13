@@ -4,6 +4,7 @@
 from models.base import Base
 
 
+
 class Rectangle(Base):
 
     """this is a rectangle class for project"""
@@ -28,6 +29,10 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, new_value):
+        if type(new_value) != int:
+            raise TypeError("width must be an integer")
+        if new_value <= 0:
+            raise ValueError("width must be > 0")
         self.__width = new_value
 
     @property
@@ -37,6 +42,10 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, new_value):
+        if type(new_value) != int:
+            raise TypeError("height must be an integer")
+        if new_value <= 0:
+            raise ValueError("height must be > 0")
         self.__height = new_value
 
     @property
@@ -46,6 +55,10 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, new_value):
+        if type(new_value) != int:
+            raise TypeError("x must be an integer")
+        if new_value < 0:
+            raise ValueError("x must be >= 0")
         self.__x = new_value
 
     @property
@@ -55,4 +68,8 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, new_value):
+        if type(new_value) != int:
+            raise TypeError("y must be an integer")
+        if new_value < 0:
+            raise ValueError("y must be >= 0")
         self.__y = new_value

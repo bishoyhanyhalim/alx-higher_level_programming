@@ -2,6 +2,7 @@
 """this is a rectangle class for project"""
 
 from models.base import Base
+# from base import Base
 
 
 class Rectangle(Base):
@@ -76,3 +77,8 @@ class Rectangle(Base):
     def area(self):
         """now let's get the area of rectangle"""
         return self.width * self.height
+
+    def display(self):
+        """some magic to print custom #"""
+        for num in range(self.height):
+            print(self.width * "#")

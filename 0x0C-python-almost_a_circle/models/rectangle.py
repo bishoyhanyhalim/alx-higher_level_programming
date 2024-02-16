@@ -80,5 +80,16 @@ class Rectangle(Base):
 
     def display(self):
         """some magic to print custom #"""
+
+        for num in range(self.y):
+            print(self.x * "")
         for num in range(self.height):
+            print(self.x * " ", end="")
             print(self.width * "#")
+
+    def __str__(self):
+        """this func can print [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
+        return (
+            f"[Rectangle] ({self.id}) "
+            f"{self.x}/{self.y} - {self.width}/{self.height}"
+        )

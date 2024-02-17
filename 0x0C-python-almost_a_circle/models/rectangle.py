@@ -2,6 +2,7 @@
 """this is a rectangle class for project"""
 
 from models.base import Base
+# from base import Base
 
 
 class Rectangle(Base):
@@ -86,13 +87,6 @@ class Rectangle(Base):
             print(self.x * " ", end="")
             print(self.width * "#")
 
-    def __str__(self):
-        """this func can print [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
-        return (
-            f"[Rectangle] ({self.id}) "
-            f"{self.x}/{self.y} - {self.width}/{self.height}"
-        )
-
     # def update(self, *args):
     #     """this new update"""
     #     attrs = ["id", "width", "height", "x", "y"]
@@ -135,7 +129,6 @@ class Rectangle(Base):
                 elif k == "y":
                     self.y = v
 
-
     def to_dictionary(self):
         """now return the value to dict"""
         return {
@@ -145,3 +138,10 @@ class Rectangle(Base):
             "x": self.x,
             "y": self.y
         }
+
+    def __str__(self):
+        """this func can print [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
+        return (
+            f"[Rectangle] ({self.id}) "
+            f"{self.x}/{self.y} - {self.width}/{self.height}"
+        )

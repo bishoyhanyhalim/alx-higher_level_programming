@@ -2,7 +2,6 @@
 """this is a square class for project"""
 
 from models.rectangle import Rectangle
-# from rectangle import Rectangle
 
 
 class Square(Rectangle):

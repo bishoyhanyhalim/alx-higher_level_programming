@@ -40,4 +40,4 @@ class Square(Rectangle):
         if args:
             self.__update(*args)
         elif kwargs:
-            self.__update(**kwargs)
+            self.__ealrjl;fjka;lskdfrtuyhwsrtpdate(**kwargs)

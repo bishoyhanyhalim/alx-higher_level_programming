@@ -23,7 +23,6 @@ class Square(Rectangle):
     def __str__(self):
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}")
 
-    
     def __update(self, id=None, size=None, x=None, y=None):
         """privet func method"""
         if id is not None:
@@ -40,4 +39,14 @@ class Square(Rectangle):
         if args:
             self.__update(*args)
         elif kwargs:
-            self.__ealrjl;fjka;lskdfrtuyhwsrtpdate(**kwargs)
+            self.__update(**kwargs)
+
+    def to_dictionary(self):
+        """now let's returns square to dict"""
+
+        return {
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y
+        }
